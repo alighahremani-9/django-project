@@ -1,0 +1,79 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login page</title>
+        <link rel="stylesheet" href="{% static 'blog/css/login.css' %}">
+        {% comment %} <link rel="stylesheet" href="{% static 'blog/css/bootstrap.css' %}"> {% endcomment %}
+        {% comment %} <link rel="stylesheet" href="{% static 'blog/css/style.css' %}"> {% endcomment %}
+    </head>
+
+
+    <body>
+        <header>
+            {% comment %} <div class="header_section">
+                <div class="container-fluid header_main">
+                   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                      <a class="logo" href="index.html"><img src="{% static 'blog/images/logo.png' %}"></a>
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                         <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                               <a class="nav-link" href="">Home</a>
+                            </li>
+                            <li class="nav-item">
+                               <a class="nav-link" href="about">About</a>
+                            </li>
+                            <li class="nav-item">
+                               <a class="nav-link" href="blog">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                               <a class="nav-link" href="features">Features</a>
+                            </li>
+                            <li class="nav-item">
+                               <a class="nav-link" href="contact">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                               <a class="nav-link" href="login">Login</a>
+                            </li>
+                            <li class="nav-item">
+                               <a class="nav-link" href="#"><img src="{% static 'blog/images/serach-icon.png' %}"></a>
+                            </li>
+                         </ul>
+                      </div>
+                   </nav>
+                </div> {% endcomment %}
+        </header>
+
+        <main>
+            <div class ="login-box">
+                <h2 >Login</h2 >
+                <form>
+                    <div class="user-box">
+                        <input type="text" name="" required="">
+                        <label>username</label>
+                    </div>
+                    <div class="user-box">
+                        <input type="password" name ="" required="">
+                        <label>password</label>
+                    </div>
+
+                    <div class="button-form">
+
+                        <a id="submit" href="#">Submit</a>
+
+                        <div id="register"> Don't have an account? <a href="#">Register</a></div>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+
+        <footer></footer>
+
+    </body>
+</html>

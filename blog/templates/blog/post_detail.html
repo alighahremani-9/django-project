@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extera_css %}
+  <link rel="stylesheet" href="{% static 'blog/css/comments.css' %}">
+
+{% endblock extera_css %}
+
+{% block content %}
+
+<div class="header_section">
+    {% include 'header.html' %}
+  </div>
+  <!-- blog section start -->
+  <div class="about_section layout_padding">
+    <div class="container">
+        {% include 'blog/post_comment.html' with p=post_from_view %}
+    </div>
+  </div>
+  <!-- blog section end -->
+  {% include 'footer.html' %}
+
+
+
+{% endblock content %}

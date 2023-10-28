@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+  <!-- header section start -->
+  <div class="header_section">
+    {% include 'header.html' %}
+  </div>
+  <!-- blog section start -->
+  <div class="about_section layout_padding">
+    <div class="container">
+      {% for post in posts %}
+      {% comment %} {{post}} {% endcomment %}
+        {% include 'blog/post.html' with post=post %}
+      {% endfor %}
+    </div>
+  </div>
+  <!-- blog section end -->
+  {% include 'footer.html' %}
+{% endblock %}
